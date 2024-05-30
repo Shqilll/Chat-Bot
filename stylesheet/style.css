@@ -1,0 +1,274 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Continer */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Left Container */
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 1.2em;
+  background: linear-gradient(to bottom, #d4d0fb, #afa8ff);
+  background-color: #d4d0fb;
+}
+
+/* new prompt button */
+.new-prompt-button {
+  text-decoration: none;
+}
+.new-prompt {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: space-between;
+  background-color: #eae8fe;
+  border-radius: 10px;
+}
+
+.new-prompt h3 {
+  margin: 0;
+  color: #8980ff;
+}
+
+.new-prompt i {
+  margin: 0;
+  padding-top: 4px;
+  color: #8980ff;
+}
+
+/* History Time */
+.history-time {
+  margin: 0 0 10px 10px;
+  font-weight: 300;
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+/* Prompt List */
+.prompt-list {
+  height: 80%;
+  overflow: auto;
+}
+
+/* Prompt list box */
+.prompt-list-box {
+  background-color: #e7e5ff;
+  border-radius: 4px;
+}
+
+.prompt-list-box p {
+  margin: 0;
+  padding: 12px;
+  margin-bottom: 3px;
+}
+
+/* account */
+.account {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  align-items: center;
+  background-color: #8980ff;
+  border-radius: 7px;
+}
+
+.account i {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.account h4 {
+  margin: 0;
+  margin-left: 7px;
+  color: aliceblue;
+}
+
+/* Right Container */
+.rightContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 10.5em 1.2em;
+}
+
+.response-prompt {
+  height: 85%;
+  overflow: auto;
+}
+
+.request-chat i {
+  font-size: 30px;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+.response-chat i {
+  font-size: 30px;
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+.request-chat p {
+  margin: 0;
+  padding: 12px;
+}
+
+.response-chat p {
+  margin: 0;
+  padding: 12px;
+}
+
+.chat-box {
+  background-color: #ffffff;
+  border: #d4d0ff 2px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.request-chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.response-chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.input-prompt {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.input-prompt textarea {
+  width: 90%;
+  border-radius: 10px;
+  resize: none;
+  background-color: #E7E5FF;
+  border: solid 1px #857CF5;
+  padding: 4px;
+}
+
+.input-prompt button {
+  width: 9.5%;
+  border-radius:10px;
+  border: none;
+  background-color: #857CF5;
+  color: white;
+  margin-left: 0.5%;
+}
+
+.login-pop-up {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-content {
+  height: auto;
+  width: 30em;
+  background-color: #FBFBFF;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.pop-up-content input {
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.login-button {
+  text-decoration: none;
+  padding: 6px 17px 6px 17px;
+  background-color: #857CF5;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.regist-button {
+  font-size: 11px;
+  margin-top: 16px;
+}
+
+.close-button {
+  position: absolute;
+  top: -19px;
+  right: -19px;
+  font-size: 30px;
+  color: #EB4D4D;
+  cursor: pointer;
+}
+
+.regist-pop-up {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.regist-pop-up-content {
+  height: auto;
+  width: 30em;
+  background-color: #FBFBFF;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.regist-pop-up-content input {
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.submit {
+  text-decoration: none;
+  padding: 6px 17px 6px 17px;
+  background-color: #857CF5;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 12px;
+}

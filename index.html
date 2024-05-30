@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chatBot</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftContainer">
+        <!-- new prompt button -->
+        <a class="new-prompt-button" href="">
+          <div class="new-prompt">
+            <h3>New Prompt</h3>
+            <i class="fa-solid fa-plus"></i></div
+        ></a>
+
+        <!-- history prompt -->
+        <p class="history-time">History</p>
+
+        <!-- Prompt List -->
+        <div class="prompt-list">
+          <div class="prompt-list-box">
+            <p>How to make dragon</p>
+          </div>
+        </div>
+
+        <!-- Log Out -->
+        <a style="text-decoration: none" href="">Log Out</a>
+
+        <!-- Account Label -->
+        <a id="login-button" style="text-decoration: none" href="#">
+          <div class="account">
+            <i class="fa-solid fa-circle-user"></i>
+            <h4>User</h4>
+          </div>
+        </a>
+      </div>
+      <div class="rightContainer">
+        <div class="response-prompt">
+          <!-- request chat -->
+          <div class="request-chat">
+            <div class="chat-box">
+              <p>Bagaimana cara membuat naga?</p>
+            </div>
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+
+          <!-- Response chat -->
+          <div class="response-chat">
+            <i class="fa-solid fa-robot"></i>
+            <div class="chat-box">
+              <p>
+                Membuat karakter naga melibatkan proses yang kreatif dan teknis,
+                dimulai dengan menentukan konsep dan desain yang menggambarkan
+                karakteristik unik seperti ukuran, warna, dan bentuk tubuh.
+                Setelah itu, pemilihan platform atau media menjadi kunci, karena
+                akan memengaruhi detail teknis dan animasi yang diperlukan.
+                Apakah karakter naga dibuat secara digital atau manual juga
+                menjadi pertimbangan, dengan langkah-langkah seperti sketsa
+                awal, desain 3D, dan penambahan detail seperti tekstur dan
+                warna. Pengujian dan koreksi kemudian dilakukan untuk memastikan
+                karakter naga sesuai dengan visi, sebelum diintegrasikan ke
+                dalam platform atau media yang dituju. Dengan proses ini,
+                karakter naga dapat difinalisasi dan siap untuk digunakan atau
+                ditampilkan sesuai kebutuhan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- input text -->
+        <div class="input-prompt">
+          <textarea name="" id=""></textarea>
+          <button>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- login -->
+    <div class="login-pop-up">
+      <div class="pop-up-content">
+        <!-- Login -->
+        <i id="close-button" class="close-button fa-solid fa-xmark"></i>
+        <h2>Login</h2>
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Password" />
+        <a id="submit-login-button" class="login-button" href="#">Login</a>
+        <a id="regist-button" class="regist-button" href="#">Don't have an account yet?</a>
+      </div>
+    </div>
+    <!-- Regist Pop UP -->
+    <div class="regist-pop-up">
+      <div class="regist-pop-up-content">
+        <i id="close-button-regist" class="close-button fa-solid fa-xmark"></i>
+        <p>Name</p>
+        <input type="text">
+        <p>Email</p>
+        <input type="text">
+        <p>Password</p>
+        <input type="text">
+        <p>Confirm Password</p>
+        <input type="text">
+        <a id="submit-regist-button" class="submit" href="#">Regist</a>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script/index.js"></script>
+  </body>
+</html>
